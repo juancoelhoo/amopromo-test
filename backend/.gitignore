@@ -1,0 +1,15 @@
+.vscode
+env
+__pycache__/
+*.__pycache__/
+*.pyc
+mydata
+media
+debug.log
+logs
+db.sql
+.rabbitmq
+.idea
+.venv
+.python-version
+*.json
