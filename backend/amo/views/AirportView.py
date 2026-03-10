@@ -8,3 +8,4 @@ class AirportView(APIView):
         airports = Airport.objects.all()
         serializer = AirportSerializer(airports, many=True)
         return Response(serializer.data)
+    
