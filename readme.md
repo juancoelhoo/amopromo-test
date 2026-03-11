@@ -12,6 +12,7 @@ http://localhost:8000/search/?from=POA&to=MAO&departure_date=2026-06-12&return_d
 3. Once the server is running, open another terminal and change to backend/ directory
 4. Use the command [docker exec -it backend_container python manage.py import_airports] to run the exercise 1
 5. The database is now populated, and the API is ready to receive requests.
+6. Use the command [docker exec -it backend_container python manage.py test] to run the test
 
 # TECHNOLOGIES
 Python 3.11: The core programming language used for its versatility and clean syntax.
