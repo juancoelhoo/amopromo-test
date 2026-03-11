@@ -13,7 +13,7 @@ http://localhost:8000/search/?from=POA&to=MAO&departure_date=2026-06-12&return_d
 4. Use the command `docker exec -it backend_container python manage.py import_airports` to run the exercise 1
 5. The database is now populated, and the API is ready to receive requests.
 
-# Tests
+# TESTS
 
 1. Import airports using the test file
 
