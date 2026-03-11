@@ -25,7 +25,7 @@ To use this file, pass the `--file_path` argument pointing to the file inside th
 docker exec -it backend_container python manage.py import_airports --file_path=/app/test.json
 ```
 
-2. Use the command [docker exec -it backend_container python manage.py test] to run the test for the second exercise
+2. Use the command `docker exec -it backend_container python manage.py test` to run the test for the second exercise
 
 # TECHNOLOGIES
 Python 3.11: The core programming language used for its versatility and clean syntax.
