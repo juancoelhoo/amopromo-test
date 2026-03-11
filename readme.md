@@ -8,11 +8,24 @@ http://localhost:8000/search/?from=POA&to=MAO&departure_date=2026-06-12&return_d
 
 # SETUP & EXECUTION
 1. Clone this repository
-2. Run [make backend] to build and start the Docker environment.
-3. Once the server is running, open another terminal and change to backend/ directory
-4. Use the command [docker exec -it backend_container python manage.py import_airports] to run the exercise 1
+2. Run `make backend` to build and start the Docker environment.
+3. Once the server is running, open another terminal and change to `backend/` directory
+4. Use the command `docker exec -it backend_container python manage.py import_airports` to run the exercise 1
 5. The database is now populated, and the API is ready to receive requests.
-6. Use the command [docker exec -it backend_container python manage.py test] to run the test
+
+# Tests
+
+1. Import airports using the test file
+
+If needed, the `test.json` file can be used to modify the airports and verify that the first exercise is working correctly.
+
+To use this file, pass the `--file_path` argument pointing to the file inside the container:
+
+```bash
+docker exec -it backend_container python manage.py import_airports --file_path=/app/test.json
+```
+
+2. Use the command [docker exec -it backend_container python manage.py test] to run the test for the second exercise
 
 # TECHNOLOGIES
 Python 3.11: The core programming language used for its versatility and clean syntax.

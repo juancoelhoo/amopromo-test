@@ -12,4 +12,3 @@ db.sql
 .idea
 .venv
 .python-version
-*.json
