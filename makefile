@@ -7,3 +7,6 @@ backend:
 import:
 	docker exec -it backend_container python manage.py migrate
 	docker exec -it backend_container python manage.py import_airports
+
+clean:
+	-docker stop backend_container
