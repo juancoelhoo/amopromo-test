@@ -7,8 +7,12 @@ services:
       sh -c "python manage.py migrate &&
              python manage.py runserver 0.0.0.0:8000"
     volumes:
-      - .:/app
+      - .:/app             # Mount your code for live editing
+      - db_data:/app/db_data # Dedicated volume for the SQLite database
     ports:
       - "8000:8000"
     environment:
       - DEBUG=1
+
+volumes:
+  db_data:
